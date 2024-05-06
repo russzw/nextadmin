@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@next/eslint-plugin-next": "14.0.1",
+    "@vis.gl/react-google-maps": "^0.9.0",
     "bcrypt": "^5.1.1",
     "mongoose": "^8.3.2",
     "next": "14.0.1",
+    "next-auth": "^5.0.0-beta.3",
     "react": "18",
     "react-dom": "18",
     "react-icons": "^4.11.0",
@@ -20,6 +22,7 @@
     "use-debounce": "^9.0.4"
   },
   "devDependencies": {
+    "@types/react": "18.3.0",
     "eslint": "8",
     "eslint-config-next": "14.0.1"
   }
