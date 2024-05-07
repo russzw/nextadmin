@@ -6,6 +6,9 @@
       "esnext"
     ],
     "allowJs": true,
+    "paths": {
+      "@/*": ["./*"]
+    },
     "skipLibCheck": true,
     "strict": false,
     "noEmit": true,

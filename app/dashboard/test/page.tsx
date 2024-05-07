@@ -4,12 +4,13 @@ import React, { useEffect, useState } from "react";
 import {
   APIProvider,
   Map,
+  InfoWindow,
   Marker,
   useMapsLibrary,
   useMap,
 } from "@vis.gl/react-google-maps";
 import { darkModeMapStyle } from "@/app/lib/mapStyles";
-import styles from "./map.module.css";
+import styles from "./test.module.css";
 
 export default function Mapper() {
   const position = { lat: -17.809456, lng: 31.037992 };
@@ -29,7 +30,9 @@ export default function Mapper() {
     { lat: -17.820587117773236, lng: 31.02204701024367 }, // A
     { lat: -17.820836287961782, lng: 31.046514506847107 }, // B
     { lat: -17.809456, lng: 31.037992 }, // C
+    { lat: -17.8040097580655, lng: 31.015817537227402}
   ];
+
 
   return (
     <div>
@@ -47,6 +50,7 @@ export default function Mapper() {
               <Marker 
               key={index} 
               position={position}
+              label={`Bin ${index+1}`}
               />
             ))}
           </Map>
@@ -57,7 +61,7 @@ export default function Mapper() {
           A-B
         </button>
         <button onClick={() => 
-          handleSetA("-17.810836287961782, 31.046514506847107")
+          handleSetA("-17.8040097580655, 31.015817537227402")
           }>
           B-C
         </button>

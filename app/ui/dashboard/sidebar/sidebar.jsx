@@ -14,7 +14,7 @@ import {
   MdLogout,
   MdOutlineMap,
 } from 'react-icons/md';
-import { auth, signOut } from '@/app/auth';
+import { auth, signOut } from 'app/auth.js';
 
 const menuItems = [
   {
